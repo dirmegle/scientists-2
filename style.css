@@ -1,0 +1,144 @@
+/*
+    Pilko teksto spalva
+    #666;
+
+    Bloko viršutinio border ir h1 spalva:
+    #0974b3
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+section {
+    width: 80vw;
+    position: relative;
+}
+
+article {
+    background: white;
+    border-top: #b5b4b4 solid 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    width: 22%;
+    height: 50%;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article:hover {
+    border-top: #0974b3 solid 4px;
+}
+
+h1 {
+    color: #0974b3;
+}
+
+.date {
+    font-size: 0.8em;
+    font-weight: 100;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+i {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+a {
+    display: block;
+    margin: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    background: #0974b3;
+    border-radius: 20px 0px 20px 0px;
+    border: none;
+}
+
+button:hover {
+    background: #005281;
+}
+
+.content {
+    font-size: 12px;
+}
+
+.imagecontainer {
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 120px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+  }
+
+  .imagecontainer:hover .overlay {
+    opacity: 60%;
+  }
+
+  .icon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+.newton {
+    float: left;
+    margin-right: 20px;
+}
+
+.einstein {
+    float: left;
+    margin-right: 20px;
+}
+
+.tesla {
+    float: left;
+}
